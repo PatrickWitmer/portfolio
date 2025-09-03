@@ -1,0 +1,42 @@
+/* Header component styles */
+
+.header {
+  /* Main header styles */
+}
+
+.bar {
+  border-bottom: 10px solid var(--black, black);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 4rem;
+  margin-left: 2rem;
+  position: relative;
+  z-index: 2;
+  background: limegreen;
+  transform: skew(-7deg);
+  border: 10px solid var(--black, black)
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  font-family: sans-serif;
+}
+
+.subBar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 1px solid var(--black, black);
+}
+
+.search {
+  /* Search text styles */
+}
+

@@ -1,16 +1,17 @@
 import PropTypes from 'prop-types';
+import Header from './Header';
+import styles from './Page.module.css';
 
 export default function Page({ children, cool }) {
   return (
     <div>
-      <h2>This is the page component</h2>
-      <h3> {cool} </h3>
-      {children}
+      <Header />
+      <div className={styles.innerstyles}>{children}</div>
     </div>
   );
 }
 
 Page.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node),
+  children: PropTypes.any,
   cool: PropTypes.string,
 };
